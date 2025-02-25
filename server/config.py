@@ -3,7 +3,8 @@
 # @Author  : ShaoJK
 # @File    : config.py
 # @Remark  :
+import os
 
 # Datafocus环境配置
-DF_URL = "http://192.168.0.120:31600"
-DF_APP_TOKEN = "NWIzZjg1OTYzMjMzNGY4NGIzMjQxZDc3MDg4MjFkOGIuMmNlNDEyNzkzYmJkNDM4ZmI4NWVmN2VlNDlhMzMwNGE="
+DF_URL = os.getenv("DF_URL", "https://cloud001.datafocus.ai")
+DF_APP_TOKEN = os.getenv("DF_APP_TOKEN", "NWIzZjg1OT********************************************************************lhMzMwNGE=")

@@ -10,7 +10,7 @@ from flask import Flask, render_template, jsonify
 import config
 from services.focus import list_tables, init, chat
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", static_url_path="/")
 app.config.from_object(config)
 
 
@@ -32,12 +32,6 @@ def api_init():
 @app.route('/chat', methods=['POST'])
 def api_chat():
     return jsonify(chat())
-
-
-@app.route('/test')
-def test():
-    raise ValueError("jawkdf")
-    return jsonify({"name": "WTF"})
 
 
 @app.errorhandler(Exception)
