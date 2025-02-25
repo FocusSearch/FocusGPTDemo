@@ -2,7 +2,7 @@ cd web
 @REM call npm install
 @REM call npm run build
 cd ..
-copy "web\dist\index.html" "server\templates\index.html"
+copy "web\dist\public\index.html" "server\templates\index.html"
 
 for %%a in (css, js, img, datafocus-chart) do (
     mkdir "server\static\%%a"
