@@ -1,0 +1,42 @@
+#app{position:absolute;top:0;left:0;width:100%;height:100%;}
+*{outline: none;box-sizing: border-box;}
+.flex-column-container{display:flex;flex-direction: column;height:100%;}
+.flex-row-container{display: flex;flex-direction: row;width:100%;align-items: center;}
+.flex-column-container .flex-content ,
+.flex-row-container .flex-content{flex:1;flex-grow:1}
+.text-center{text-align: center;}
+.text-clip{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.error-msg{color:red;}
+.mt10{margin-top:10px;}
+.mr10{margin-right:10px;}
+.ml10{margin-left:10px;}.ml50{margin-left:50px;}
+.mb5{margin-bottom:5px;} .mb10{margin-bottom:10px;} .mb15{margin-bottom:15px;}
+.text-break{word-break: break-all;}
+.ft-bold{font-weight: bold;}
+.ft13{font-size: 13px;}.ft14{font-size: 14px;}
+.color-main-blue{color:blue;}.color-main-green{color:green;}
+.primary-button{padding:6px 15px;background: #4A1366;color:#fff;border:none;border-radius: 6px;cursor: pointer;}
+.primary-button:hover{background: #79379b;}
+.disabled{opacity:0.5!important;cursor: no-drop!important;background-image:url('./images/focus-scrolling-disable.gif')!important;background-repeat: no-repeat!important;background-position:center center!important;background-size:contain!important;}
+
+.focus-gpt-demo-container{position:relative;display:block;width:70%;min-width:700px;max-width: 1000px;border:1px solid #eee;box-shadow: 0 0 10px 0 #4A1366;margin:20px auto;height:calc(100% - 50px);}
+
+/** 选表样式 */
+.select-table-content{padding: 0 20px 20px;overflow-y: auto;}
+.select-table-list-container{flex-wrap: wrap;gap:10px;overflow-y: auto;justify-content:space-between;}
+.select-table-list-container .select-table-item{cursor: pointer;border:1px solid #eee;border-radius: 6px;padding:5px;width:30%;}
+.select-table-list-container .select-table-item.null-item{height:0;visibility: hidden;;}
+.select-table-list-container .select-table-item:hover ,
+.select-table-list-container .select-table-item.current {background:#4A1366;color:#fff;}
+.go-to-chat-button{width:30%;line-height: 20px;}
+
+/** 聊天的样式 */
+.chat-message-list{overflow-y: auto;}
+.chat-message-item{padding: 10px 20px 10px;}
+.chat-message-item.user{background-color: rgb(241,241,241);}
+.chat-user-avatar{width:40px;height:40px;border-radius: 50%;}
+.icon-gpt-avatar{background-image:url('./images/icon-gpt-white.svg');background-color:rgb(76,217,100);border-radius: 50%;background-size:60%;background-position:50% 40%;background-repeat: no-repeat;}
+.icon-user-avatar{background-image:url('./images/header.svg');background-color: rgb(255,59,48);border-radius: 50%;background-size:60%;background-position:50% 40%;background-repeat: no-repeat;}
+.search-chart-input-container{align-items:center;height:35px;line-height:23px;width:calc(100% - 60px);border-radius:8px;margin:15px 30px;padding-left:5px; background: none;border:1px solid #4A1366;}
+.gpt-answer-content{height:300px;}
+.input-dom{border: none;outline: none;resize:none;background: transparent;padding:5px 0;line-height: 22px;height:100%;}
