@@ -127,8 +127,6 @@
  * */
 import 'datafocus-chart/dist/datafocus.chart.css' ;
 import {DfChartContainer} from 'datafocus-chart/dist/datafocus.chart.js' ;
-// import "element-ui/lib/theme-chalk/index.css";
-// import { DatePicker } from 'element-ui'
 
 export default {
   name: 'App',

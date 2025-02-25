@@ -1,24 +1,16 @@
-# web
+# 使用datafocus-chart组件在本地Vue2框架下使用说明
 
-## Project setup
-```
-npm install
-```
+## 先安装datafocus-chart组件
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+~~~
+npm install datafocus-chart
+~~~
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 在将node_modules下的datafocus-chart/dist文件夹复制到public文件夹下，并将dist修改为datafocus-chart如下
 
-### Lints and fixes files
-```
-npm run lint
-```
+![alt text](image.png)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## 可以在项目中使用
+
+![alt text](image-1.png)
