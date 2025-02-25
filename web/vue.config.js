@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: './' ,
+  indexPath: 'public/index.html' ,
   devServer: {
     host: 'localhost', // can be overwritten by process.env.HOST
     https: false, // 开启https
