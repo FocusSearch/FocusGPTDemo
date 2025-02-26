@@ -1,19 +1,21 @@
 # FocusGPT DEMO
 
-这是基于DataFocus开放的API和前端组件，搭建的一个DEMO。
+这是基于DataFocus开放的API和前端组件，搭建的一个可以实现多轮问数功能的DEMO。
+需要node.js环境编译前端，和python后端环境。
 
-需要node.js环境编译前端，和python后端环境
+## 功能概述
+用户通过一个简单的Web界面输入数据查询问题。
+使用DataFocus API根据查询获取结果。
+使用前端组件渲染数据结果进行可视化。
 
-运行脚本
+## 技术栈
+后端框架：使用Python的Flask框架，适合快速构建轻量级Web应用。
+API调用：通过requests库调用DataFocus API 。
+前端：使用HTML和CSS设计简单的用户界面。
 
-```bash
-start.bat
-```
-
-![sample](./sample.jpg)
-
-### 配置
-
+## 准备工作
+获取DataFocus API密钥。
+使用环境变量存储API密钥，确保安全性。
 可以指定环境变量DF_URL和DF_APP_TOKEN来配置DataFocus环境和APP_TOKEN信息，或是在server/config.py中直接指定
 
 ```python
@@ -21,8 +23,15 @@ start.bat
 # Datafocus环境配置
 DF_URL = os.getenv("DF_URL", "https://cloud001.datafocus.ai")
 DF_APP_TOKEN = os.getenv("DF_APP_TOKEN", "NWIzZjg1OT********************************************************************lhMzMwNGE=")
-
 ```
+
+## 运行脚本
+
+```bash
+start.bat
+```
+
+![sample](./sample.jpg)
 
 
 
