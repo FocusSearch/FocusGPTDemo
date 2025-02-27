@@ -1,6 +1,6 @@
 # FocusGPT DEMO
 
-这是基于DataFocus开放的API和前端组件，搭建的一个可以实现多轮问数功能的DEMO。
+这是基于DataFocus API和datafocus-chart前端组件，搭建的一个可以实现多轮问数功能的DEMO。
 
 需要node.js环境编译前端，和python后端环境。
 
@@ -17,7 +17,7 @@
 
 API调用：通过requests库调用DataFocus API 。
 
-前端：使用HTML和CSS设计简单的用户界面。
+前端：Vue2。
 
 # 准备工作
 获取DataFocus API密钥。
