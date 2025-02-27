@@ -8,9 +8,9 @@
 # 功能概述
 用户通过一个简单的Web界面输入数据查询问题。
 
-使用DataFocus API根据查询获取结果。
+使用DataFocus API根据查询获取结果。参考文档[https://wiki.datafocus.ai/接口文档/自然语言查数据的接口文档(text%20to%20data).html]
 
-使用前端组件渲染数据结果进行可视化。
+使用前端组件渲染数据结果进行可视化。参考文档[https://www.npmjs.com/package/datafocus-chart]
 
 # 技术栈
 后端框架：使用Python的Flask框架，适合快速构建轻量级Web应用。
@@ -20,6 +20,7 @@ API调用：通过requests库调用DataFocus API 。
 前端：Vue2。
 
 # 准备工作
+
 获取DataFocus API密钥。
 
 使用环境变量存储API密钥，确保安全性。
