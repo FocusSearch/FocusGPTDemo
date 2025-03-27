@@ -2,6 +2,7 @@ cd web
 call npm install
 call npm run build
 cd ..
+mkdir server\templates
 copy "web\dist\public\index.html" "server\templates\index.html"
 
 for %%a in (css, js, img, datafocus-chart) do (
