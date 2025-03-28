@@ -12,7 +12,4 @@ for %%a in (css, js, img, datafocus-chart) do (
 )
 python -m pip install -r server/requirements.txt
 
-set DF_URL=https://cloud001.datafocus.ai
-set DF_APP_TOKEN=********
-
 python server/app.py
