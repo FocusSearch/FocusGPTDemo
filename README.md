@@ -1,4 +1,4 @@
-# FocusGPT DEMO
+# A ChatBI DEMO by FocusGPT 
 
 这是基于DataFocus API和datafocus-chart前端组件，搭建的一个可以实现多轮问数功能的DEMO。
 
